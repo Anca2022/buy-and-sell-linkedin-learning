@@ -1,19 +1,17 @@
 <ul>
-    <li class="mini-container">
+    <li class="mini-container" *ngFor='let listing of listings'>
         <div>
-            <p class="title">numele obiectului<p>
-            <p>descrierea Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, pariatur.</p>    
-            <p>$30</p>
+            <p class="title">{{listing.name}}<p>
+            <p>{{listing.description}}</p>    
+            <p>${{listing.price}}</p>
         </div>
         <div class="buttons">
-            <div class="button"><a routerLink='/edit-listing/:id'>Edit</a></div>
-            <div class="button"><a routerLink=''>Delete</a></div>
+            <div class="button"><a routerLink='/edit-listing/{{listing.id}}'>Edit</a></div>
+            <div class="button" (click)="deleteItem(listing.id)">Delete</div>
         </div>
         
     </li>
-    <li class="mini-container">
-        <p class="title">numele obiectului - $30</p>
-    </li>
+   
     
 </ul>
 <div class="button btn-new-listing"><a routerLink='/new-listing'>Create new listing</a></div>

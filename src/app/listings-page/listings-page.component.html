@@ -1,8 +1,5 @@
 <ul>
-    <li class="mini-container">
-        <p class="title"><a routerLink="/listing-detail/:id">numele obiectului - $30</a></p>
-    </li>
-    <li class="mini-container">
-        <p class="title">numele obiectului - $30</p>
+    <li class="mini-container" *ngFor="let listing of listings">
+        <p class="title"><a routerLink="/listing-detail/{{listing.id}}">{{listing.name}} - ${{listing.price}}</a></p>
     </li>
 </ul>

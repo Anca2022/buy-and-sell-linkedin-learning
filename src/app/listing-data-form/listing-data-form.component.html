@@ -1,13 +1,13 @@
-<form action="">
+<form>
     <label for="name">Name: 
-        <input type="text" name="name" id="name" placeholder="Bicycle">
+        <input type="text" name="name" id="name" [value]="listing.name">
     </label>
     <label for="item-description">Item Description: 
-        <input type="text" name="item-description" id="item-description" placeholder="lorem ipsum haha clar">
+        <input type="text" name="item-description" id="item-description" [value]="listing.description">
     </label>
     <label for="price">Price: 
-        <input type="text" name="price" id="price" placeholder="$30">
+        <input type="text" name="price" id="price" [value]='listing.price'>
     </label>
     
-    <input type="submit" class="button" value="Save changes">
+    <button class="button" (click)="updateItem(listing.id)">{{buttonText}}</button>
 </form>

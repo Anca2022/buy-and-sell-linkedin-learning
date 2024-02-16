@@ -90,7 +90,7 @@ input, textarea{
     display:flex;
     flex-direction: column;
 }
-input.button{
+button.button{
    border:none;
    margin-top: 1rem;
 }

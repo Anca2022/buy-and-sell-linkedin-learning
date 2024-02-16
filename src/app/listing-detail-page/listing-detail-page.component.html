@@ -1,7 +1,7 @@
 <div class="mini-container column">
     <div class="button"><a routerLink="/listings">Back</a></div>
-    <p class="title">Numele </p>
-    <p>descrierea Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, unde?</p>
-    <p>$500</p>
-    <div class="button"><a routerLink="/contact/:id">Contact Seller</a></div>
+    <p class="title">{{listing.name}}</p>
+    <p>{{listing.description}}</p>
+    <p>${{listing.price}}</p>
+    <div class="button"><a routerLink="/contact/{{listing.id}}">Contact Seller</a></div>
 </div>

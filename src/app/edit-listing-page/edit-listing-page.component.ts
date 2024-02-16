@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { ListingDataFormComponent } from '../listing-data-form/listing-data-form.component';
-import { RouterModule } from '@angular/router';
+//import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-edit-listing-page',
