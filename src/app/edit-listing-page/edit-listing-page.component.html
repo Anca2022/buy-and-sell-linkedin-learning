@@ -1,5 +1,10 @@
 <div class="mini-container column">
     <h2>Edit Listing</h2>
-    <app-listing-data-form></app-listing-data-form>
-</div>
+    <app-listing-data-form 
+        buttonText="Update item"
+        currentName={{listing.name}}
+        currentDescription={{listing.description}}
+        currentPrice={{listing.price}}
+        (onSubmit)="onSubmit((listing.id))">
+    </app-listing-data-form>
 

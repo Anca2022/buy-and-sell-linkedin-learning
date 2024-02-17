@@ -1,4 +1,6 @@
 <div class="mini-container column">
     <h2>New Listing</h2>
-    <app-listing-data-form buttonText="Create new item"></app-listing-data-form>
+    <app-listing-data-form buttonText="Save new item"
+                (onSubmit)="onSubmit()">
+    </app-listing-data-form>
 </div>

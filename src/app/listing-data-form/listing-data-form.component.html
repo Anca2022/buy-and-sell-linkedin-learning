@@ -1,13 +1,13 @@
-<form>
+<form (ngSubmit)="onButtonClicked()"> 
     <label for="name">Name: 
-        <input type="text" name="name" id="name" [value]="listing.name">
+        <input type="text" name="name" id="name" [(ngModel)]="name">
     </label>
     <label for="item-description">Item Description: 
-        <input type="text" name="item-description" id="item-description" [value]="listing.description">
+        <input type="text" name="item-description" id="item-description" [(ngModel)]="description">
     </label>
     <label for="price">Price: 
-        <input type="text" name="price" id="price" [value]='listing.price'>
+        <input type="text" name="price" id="price" [ngModel]='price'>
     </label>
     
-    <button class="button" (click)="updateItem(listing.id)">{{buttonText}}</button>
+    <button class="button">{{buttonText}}</button>
 </form>
