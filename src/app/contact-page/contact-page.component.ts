@@ -3,7 +3,6 @@ import { ActivatedRoute, Router} from '@angular/router';
 import { Listing } from '../types';
 import { FormsModule } from '@angular/forms';
 import { fakeListings } from '../fake-data';
-// import {  } from 'express';
 
 @Component({
   selector: 'app-contact-page',

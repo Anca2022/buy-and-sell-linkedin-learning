@@ -1,6 +1,8 @@
 # BuyAndSell
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+This project was created following a course on LinkedIn Learning as a means to practice the Angular framework. The goal of the project is to implement a simple selling webpage where users can browse through various items to buy. The backend part of the site is missing. 
+The items used to populate the pages were retrieved from Contentful API. 
+This project was generated with Angular CLI version 17.0.3.
 
 ## Development server
 
